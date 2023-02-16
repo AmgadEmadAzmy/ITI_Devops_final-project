@@ -123,12 +123,11 @@ Third : Connect to Private GKE Cluster through Bastion VM
      
      and cat the pass.
      
-     ![Screenshot from 2023-02-14 12-04-13](https://user-images.githubusercontent.com/119006761/218703505-a8777259-be11-4d2a-9e83-e897c1ad597e.png)
 
 - this URL for jenkins on my cluster
 
 
-       http://34.171.255.255:8080/
+       http://34.172.152.171:8080/
        
    ======================================================================================================================
  - 6th Part: Build CI/CD Pipeline using Jenkins
