@@ -155,7 +155,7 @@ Apply LoadBalancer service for the app
  
  2- Add Credentials in Jenkins
  
- ![Screenshot from 2023-02-17 19-20-41](https://user-images.githubusercontent.com/119006761/219721124-e52ff2b2-eb7a-4461-88ed-ce181a0cef16.png)
+![image](https://user-images.githubusercontent.com/119006761/219725145-6bf3bb00-a15d-4334-9f5c-1616003e012c.png)
 
  
  3- Create CI-CD Pipeline:
@@ -170,7 +170,7 @@ Apply LoadBalancer service for the app
  
  Deploy our Application in GKE
  
- ![Screenshot from 2023-02-17 19-23-17](https://user-images.githubusercontent.com/119006761/219721868-edb3989c-df95-43ba-bc8c-8adef360d63e.png)
+![Screenshot from 2023-02-17 19-28-05](https://user-images.githubusercontent.com/119006761/219723853-76452e2e-1e48-43d3-b573-3c4642d5fe19.png)
 
  
  
