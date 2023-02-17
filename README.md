@@ -88,14 +88,11 @@ Third : Connect to Private GKE Cluster through Bastion VM
  
  ===================================================================================================================
  
- 4th Deploy jenkins on GKE Cluster
+ 4th- You Can Deploy jenkins on GKE Cluster
  
   - using deploy jenkins code in repo you will run this Commands :
  
   
-     -kubectl create namespace jenkins
- 
-     -kubectl get namespaces
  
      -kubectl create -f jenkinsdeployment.yaml -n jenkins
  
@@ -112,25 +109,90 @@ Third : Connect to Private GKE Cluster through Bastion VM
  
   -kubectl get services -n jenkins
  
-  
-  ![Screenshot from 2023-02-14 12-09-54](https://user-images.githubusercontent.com/119006761/218705065-553fb5be-baf8-4266-996f-35054d7c929f.png)
-
   -------------------------------------------------------------------------------------------------------------------   
  
    - to get password to configure jenkins you will run this commands:
    
-     -kubectl exec -it <name-of-pod> bash -n jenkins
+     -kubectl exec -it " name-of-pod " bash -n jenkins
      
      and cat the pass.
      
 
 - this URL for jenkins on my cluster
+ 
+ 
+ 
+  ![Screenshot from 2023-02-17 19-12-32](https://user-images.githubusercontent.com/119006761/219719386-d34505ab-8e3b-457e-b29a-95346239deba.png)
+
+ 
+ 
+ 
+ 
+ 
+ http://34.27.229.240:8080/
 
 
-       http://34.172.152.171:8080/
        
    ======================================================================================================================
- - 6th Part: Build CI/CD Pipeline using Jenkins
+ - 6th Part: Build CI/CD Pipeline using Jenkins (click on the next link )
+ 
+ 
+ 
+ https://github.com/AmgadEmadAzmy/nodejs-app
+ 
+ 
+ =======================================================================================================================
+ 1- Jenkins will:
+ 
+ Build an image from Dockerfile
+ 
+Push the image to DockerHub
+ 
+Apply deployment for the app based on the image
+ 
+Apply LoadBalancer service for the app
+ 
+ 
+ 2- Add Credentials in Jenkins
+ 
+ ![Screenshot from 2023-02-17 19-20-41](https://user-images.githubusercontent.com/119006761/219721124-e52ff2b2-eb7a-4461-88ed-ce181a0cef16.png)
+
+ 
+ 3- Create CI-CD Pipeline:
+ 
+ Pull Code from GitHub
+ 
+ Build the Application image using Docker
+ 
+ Push Image to DockerHub
+ 
+ Trigger CD Pipeline to Run
+ 
+ Deploy our Application in GKE
+ 
+ ![Screenshot from 2023-02-17 19-23-17](https://user-images.githubusercontent.com/119006761/219721868-edb3989c-df95-43ba-bc8c-8adef360d63e.png)
+
+ 
+ 
+ you can ckeck link
+ 
+ http://34.29.118.78:3000/
+ 
+
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
        
      
     
